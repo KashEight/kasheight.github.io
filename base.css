@@ -1,5 +1,9 @@
 @charset "utf-8";
 
-body {
+html {
     font-family: "Meiryo";
+}
+
+#links li {
+    list-style-type: none;
 }
