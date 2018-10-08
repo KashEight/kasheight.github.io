@@ -4,6 +4,11 @@ html {
     font-family: "Meiryo";
 }
 
-#links li {
-    list-style-type: none;
+#links li a:visited .icon {
+    text-decoration: none;
+    color: black
+}
+
+#links li a:hover .icon {
+    color: orange;
 }
