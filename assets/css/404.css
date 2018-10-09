@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {
+    font-family: "Meiryo";
+}
+
+.fzf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 400%;
+    animation: anim 1s linear 0s infinite normal both running;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: blue;
+    }
+}
