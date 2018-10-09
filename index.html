@@ -19,6 +19,13 @@
                     <li><a href="http://amzn.asia/i8wxkVU"><span class="fa-li"><i class="fab fa-amazon fa-fw icon"></i></span> Amazon Wishlist</a></li>
                 </ul>
             </header>
+            <footer>
+                <small>Copyright &copy; <span id="copyright"></span> kash / Hytus All Rights Reserved.</small>
+                <script>
+                    var y = new Date().getFullYear()
+                    document.getElementById("copyright").innerText = (y == 2018) ? "2018":"2018-" + y;
+                </script>
+            </footer>
         </main>
     </body>
 </html>
