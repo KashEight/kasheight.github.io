@@ -13,12 +13,16 @@ body {
 
 .menu {
     height: 90px;
+    padding: 0px;
+    margin: 0px;
     background-color: rgba(255, 255, 255, 0.2);
     display: flex;
-    border-bottom: 5px solid lightblue;
+    border-bottom: 3px double lightblue;
 }
 
 .menu > .items {
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex: auto;
 }
@@ -30,16 +34,21 @@ body {
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    color: lightgray;
+}
+
+.menu > .items > a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .menu > #title {
     display: flex;
-    flex: auto;
+    flex-grow: 0.3;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: gray;
-    border-right: 2px solid lightblue
+    color: lightgray;
+    border-right: 3px solid lightblue
 }
 
 header {
@@ -52,12 +61,23 @@ header {
 .img {
     width: 240px;
     height: 240px;
+    padding: 0px;
+    margin: 0px;
     border-radius: 50%;
-    border: 3px solid rgba(141, 133, 133, 0.308);
+    animation: icon 3s ease 0s 1 normal both running
 }
 
 small {
     margin-left: 10px;
     text-align: right;
     color: gray;
+}
+
+@keyframes icon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
