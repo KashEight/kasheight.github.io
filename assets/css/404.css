@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * {
-    font-family: "Meiryo";
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 .parent {
@@ -21,12 +21,15 @@
         transform: rotate(0deg);
         color: red;
     }
+
     33% {
         color: green;
     }
+
     66% {
         color: blue;
     }
+
     100% {
         transform: rotate(360deg);
         color: red;

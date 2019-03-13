@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, Verdana, Arial, Meiryo, "M+ 1p", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+main {
+    height: calc(100vh - 41px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon.floating {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floating 2s linear 0s infinite normal;
+}
+
+.icon.floating .myself {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: solid 5px lightgray;
+    user-select: none;
+    pointer-events: none;
+}
+
+.icon.dummy {
+    width: 250px;
+    height: 35px;
+}
+
+.icon.shadow {
+    width: 250px;
+    height: 25px;
+}
+
+.shadow-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+}
+
+footer > small {
+    color: gray
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(20px)
+    }
+    75% {
+        transform: translateY(-20px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
